@@ -27,7 +27,7 @@ model.compile(loss='binary_crossentropy',
 cb = []
 cb.append(callbacks.TensorBoard(params["logs_dir"]))
 checkp = callbacks.ModelCheckpoint(params["weights_dir"]+'/weights.h5', 
-                                save_best_only=True, save_weights_only=True)
+                                   save_best_only=True, save_weights_only=True)
 cb.append(checkp)
 
 if os.path.exists(params["weights_dir"]+'/weights.h5'):
