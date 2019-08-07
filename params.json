@@ -1,0 +1,16 @@
+{
+    "num_words": 10000,
+    "max_len": 256,
+    "batch_size": 128,
+    "buffer_size": 100,
+    "epochs": 10,
+    "embedding_size": 128,
+    "dropout": 0.5,
+    "units_dense": 64,
+    "filters": [32,64],
+    "region_sizes": [3,5,7],
+    "lr": 0.003,
+    "weights_dir": "./weights",
+    "logs_dir": "./logs",
+    "remove_stopwords": true
+}
