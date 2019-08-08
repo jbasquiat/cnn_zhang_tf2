@@ -19,6 +19,7 @@ def cnn_zhang(params):
     x = layers.Flatten()(x)
     x = layers.Dropout(params["dropout"])(x)
     x = layers.Dense(params["units_dense"], activation='relu')(x)
+    x = layers.BatchNormalization()(x)
     x = layers.Dropout(params["dropout"])(x)
     output = layers.Dense(1, activation='sigmoid')(x)
     
